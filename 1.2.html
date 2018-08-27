@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript" src="AssembCache.js"></script>
+<script type="text/javascript">
+    //入口函数
+    //页面版本，用于检测是否需要更新缓存
+    obj.res.pageVersion = "1002";
+    obj.res.loadJs("jquery", "js/jquery-1.9.1.min.js",
+        function () {
+            whir.res.loadJs("zidingyi", "js/zidingyi.js", null);
+        });
+    obj.res.loadCss("css", "reset.css", null);
+</script>
+</body>
+</html>
